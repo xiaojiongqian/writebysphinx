@@ -23,6 +23,8 @@ Sphinx 使用 reStructuredText 作为标记语言, 可以享有 Docutils 为reSt
 Sphinx的官网英文版手册地址：`http://www.sphinx-doc.org/en/master/contents.html 
 <http://www.sphinx-doc.org/en/master/contents.html>`_ 。
 
+.. index:: 为什么用Sphinx，reStructureText?
+
 为什么用sphinx写文档？
 -------------------------
 
@@ -34,6 +36,7 @@ Sphinx的官网英文版手册地址：`http://www.sphinx-doc.org/en/master/cont
     - 支持用脚本画图，排版，高效率低成本提升文档美观度
     - 高度的可扩展性，包括自定义样式、提供自动函数来解决一些常见问题等等
 
+.. index:: 为什么减少用Markdown?
 
 为什么不推荐Markdown作为大型文档协作工具？
 -----------------------------------------------
@@ -173,6 +176,8 @@ Markdown绝对是最低的共同标准，除非文档集足够小，否则你所
 目前，Sphinx和Asciidoctor是很好的替代品。它们语音内部内置了更多的扩展，并且含有用于构建当今文档更完整的工具。
 
 Markdown更像是一个概念，而不是实现。 它通常意味着“在看起来与Markdown类似的语言上的一组互不兼容的扩展”。 当创建大的文档集时，它显然不是正确的工具。
+
+.. index:: 为什么尽量用脚本画图?
 
 为什么用脚本画图？
 ------------------------

@@ -1,6 +1,8 @@
 FAQ
 =======
 
+.. index:: 目录设置
+
 目录设置问题
 ---------------
 
@@ -29,6 +31,7 @@ FAQ
 
 处理办法：**只要删除已经build的文件目录，重新生成一遍即可**。
 
+.. index:: 使用readthedocs
 
 Read the Docs部分设置注意点
 ---------------------------------
@@ -54,6 +57,7 @@ requirement.txt，放在根目录即可。其中requirement文件内容为::
 
     master_doc = 'index'
 
+.. index:: 使用Markdown
 
 在Sphinx上使用Markdown
 -----------------------------

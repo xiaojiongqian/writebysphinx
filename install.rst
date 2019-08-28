@@ -7,6 +7,8 @@
 如果你要重度参与编写sphinx文档，那么安装本文所列工具后，你将获得非常强大的文档编辑的能力，包括布局、画图、建立
 索引、自动化格式（尤其是各种代码格式）、内容参数化以及一些自动化功能。
 
+.. index:: 安装虚拟机
+
 安装Python虚拟机
 ----------------------
 
@@ -49,6 +51,7 @@ python3环境中运行，想想就应该知道，如果不使用虚拟环境，�
     #退出虚拟机
     (sphinx-doc) MacBook:pyenv vik.qian$ deactivate
 
+.. index:: 安装sphinx
 
 安装sphinx
 ----------------------
@@ -320,6 +323,7 @@ You can workaround this issue by defining a custom CCS override file.
 #. Build your documentation using Sphinx and check the tables; cells should
    now wrap correctly.
 
+.. index:: 安装画图工具
 
 安装画图工具
 -----------------
@@ -423,6 +427,7 @@ Graphviz是一个很轻量的软件，性能非常好，用起来飞一样。
     # 输出格式，默认png，这里我用svg矢量图
     graphviz_output_format = 'svg
 
+.. index:: 安装pdf转换工具
 
 安装PDF转换工具
 -----------------
