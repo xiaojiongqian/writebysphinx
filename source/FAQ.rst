@@ -20,8 +20,12 @@ FAQ
 
 .. code-block:: bash
 
-    SOURCEDIR     = .
-    BUILDDIR      = ../writebysphinx_build
+    SOURCEDIR     = source/
+    BUILDDIR      = build/
+
+.. hint::
+
+    于此同时，你应该将除Makefile文件和_build目录文件之外的其它所有源文件移到source目录中。
 
 为什么有些目录没更新？
 ---------------------------
@@ -38,7 +42,7 @@ Read the Docs部分设置注意点
 
 总体而言，readthedocs还是比较容易设置的，如果出错，也有明确的错误输出，根据其错误输出解决问题即可。
 比如本sphinx工程用到了plantuml画图工具，网站提示plantuml没有安装，那么我们只要新增加一个文本文件
-requirement.txt，放在根目录即可。其中requirement文件内容为::
+requirements.txt，放在根目录即可。其中requirements文件内容为::
 
     sphinxcontrib-plantuml
     graphvi
