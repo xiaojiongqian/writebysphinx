@@ -1,3 +1,3 @@
 sphinxcontrib-plantuml
 graphviz
-sphinx_rtd_theme
+
