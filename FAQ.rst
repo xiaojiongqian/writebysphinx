@@ -29,6 +29,7 @@ FAQ
 
 处理办法：**只要删除已经build的文件目录，重新生成一遍即可**。
 
+
 Read the Docs部分设置注意点
 ---------------------------------
 
@@ -52,4 +53,33 @@ requirement.txt，放在根目录即可。其中requirement文件内容为::
 .. code-block:: python
 
     master_doc = 'index'
+
+
+在Sphinx上使用Markdown
+-----------------------------
+
+虽然不建议用Markdown写大型文档，但目前有大量现存Markdown写的文档，可以支持将其移植进来。
+
+Sphinx支持用Markdown进行写作。
+
+启用Markdown需要如下步骤：
+
+安装recommonmark：:
+::
+
+    pip install recommonmark
+
+添加如下内容到conf.py中：:
+
+::
+
+    source_parsers = {
+    '.md': 'recommonmark.parser.CommonMarkParser',
+    }
+
+添加Markdown的文件扩展名到配置文件的source_suffix变量：:
+
+::
+
+    source_suffix = ['.rst', '.md']
 
