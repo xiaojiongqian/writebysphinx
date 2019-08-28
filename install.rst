@@ -429,3 +429,5 @@ Graphviz是一个很轻量的软件，性能非常好，用起来飞一样。
 
 有时候文档需要发布到pdf，`这篇博客写了如何转pdf <https://dormouse-youngs-blog.readthedocs.io/en/latest/rst-pdf.html>`_ ，我还没试过，
 主要是 MacTeX/TeXLive 太大，适合装在服务器端。
+
+另外，如果你使用readthedocs来发布文档，那么readthedocs也会同时自动生成pdf，还是比较方便的。
