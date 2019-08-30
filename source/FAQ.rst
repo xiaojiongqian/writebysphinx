@@ -74,22 +74,41 @@ Sphinx支持用Markdown进行写作。
 
 启用Markdown需要如下步骤：
 
-安装recommonmark：:
+安装 recommonmark
 ::
 
-    pip install recommonmark
+    pip install --upgrade recommonmark
 
-添加如下内容到conf.py中：:
+.. Note::
+
+    版本要求 recommonmark version 0.5.0 or later.
+
+在conf.py文件增加配置：
 
 ::
 
-    source_parsers = {
-    '.md': 'recommonmark.parser.CommonMarkParser',
+    extensions = ['recommonmark']
+
+.. note::
+
+    在 version 1.8 需要用到 source_parsers变量：
+    ::
+
+        source_parsers = {
+        '.md': 'recommonmark.parser.CommonMarkParser',
+        }
+
+    在 version 3.0 只要在扩展声明即可
+
+
+如果你想在 *.md 文件之外使用Markdown解析，比如*.txt，用如下配置即可：
+
+::
+
+    source_suffix = {
+        '.rst': 'restructuredtext',
+        '.txt': 'markdown',
+        '.md': 'markdown',
     }
 
-添加Markdown的文件扩展名到配置文件的source_suffix变量：:
-
-::
-
-    source_suffix = ['.rst', '.md']
-
+更多的Markdown定制化配置，见 `recommonmark documentation <https://recommonmark.readthedocs.io/en/latest/auto_structify.html>`_ 。
