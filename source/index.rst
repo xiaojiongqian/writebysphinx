@@ -14,6 +14,7 @@ Welcome to writebysphinx's documentation!
    sphinx介绍 <intro>
    环境安装 <install>
    基本用法 <usage>
+   发布文档 <release>
    FAQ <FAQ>
 
 
