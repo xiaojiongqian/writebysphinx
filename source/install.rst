@@ -436,3 +436,28 @@ Graphviz是一个很轻量的软件，性能非常好，用起来飞一样。
 主要是 MacTeX/TeXLive 太大，适合装在服务器端。
 
 另外，如果你使用readthedocs来发布文档，那么readthedocs也会同时自动生成pdf，还是比较方便的。
+
+
+安装Breathe
+----------------
+
+如果你计划使用doxygen从代码生成文档，并导入sphinx，那么使用工具Breathe，作为一个“桥梁”可以实现这个目标。
+如果你没有这个需求，那么安装Breathe不是必须的，Breathe安装命令：
+
+::
+
+    $ pip install breathe
+
+安装完成后，在conf.py中进行如下配置，其中yourcodefile是由doxygen生成的一系列xml/xsd/xslt文件：
+
+::
+
+    extensions = ['sphinxcontrib.plantuml',
+                'sphinx.ext.graphviz',
+                'breathe']
+
+    # 设置 doxyxml 路径
+    breathe_projects = {
+                "yourcodefile": '../doxyxml/yourcodefile'
+    }
+
